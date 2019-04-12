@@ -9,7 +9,10 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '../assets/global-styles.scss';
+
 .section-experience-dev {
+  height: $section-height;
   background-color: lightblue;
 }
 </style>
