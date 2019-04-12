@@ -13,6 +13,5 @@ export default {
 
 .section-contact {
   height: $section-height;
-  background-color: lightcoral;
 }
 </style>

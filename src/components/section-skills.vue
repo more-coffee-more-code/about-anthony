@@ -13,6 +13,5 @@ export default {
 
 .section-skills {
   height: $section-height;
-  background-color: lightgreen;
 }
 </style>

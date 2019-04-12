@@ -13,6 +13,5 @@ export default {
 
 .section-experience-qa {
   height: $section-height;
-  background-color: lightcyan;
 }
 </style>

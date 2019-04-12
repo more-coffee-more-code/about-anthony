@@ -13,6 +13,5 @@ export default {
 
 .section-experience-dev {
   height: $section-height;
-  background-color: lightblue;
 }
 </style>
