@@ -32,7 +32,7 @@ export default {
 
   &__header {
     font-size: $section-header-font-size;
-    border-bottom: green solid 4px;
+    border-bottom: #9CCC65 solid 4px;
   }
 
   &__nav {
