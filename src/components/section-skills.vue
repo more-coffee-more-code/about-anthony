@@ -69,7 +69,7 @@ export default {
   height: $section-height;
 
   &__content {
-    max-width: 800px;
+    max-width: $section-content-width;
     margin: 0 auto;
   }
 

@@ -1,7 +1,7 @@
 <template>
   <section class="section-landing">
     <div class="section-landing__content">
-      <h1 class="section-landing__header">Anthony Ruffin</h1>
+      <h1 class="section-landing__header">{{ this.header }}</h1>
       <nav class="section-landing__nav">
         <a class="section-landing__nav__item" href="">Skills</a>
         <a class="section-landing__nav__item" href="">Developer</a>
@@ -13,7 +13,30 @@
 </template>
 <script>
 export default {
-  name: 'section-landing'
+  name: 'section-landing',
+  data() {
+    return {
+      windowWidth: 0,
+      windowHeight: 0
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+  methods: {
+    header() {
+      this.handleResize();
+      let lineBreak = (this.windowWidth > 900) ? 'Anthony Ruffin' : 'Anthony Ruffin'; 
+      console.log(lineBreak);
+      // return lineBreak; 
+      return 'asdfasdf';
+    },
+    handleResize() {
+      // console.log('resized');
+      return this.windowWidth = window.innerWidth;
+    }
+  }
 }
 </script>
 <style lang="scss">
@@ -23,8 +46,7 @@ export default {
   height: $section-height;
 
   &__content {
-    width: 100%;
-    max-width: 600px;
+    max-width: $section-landing-content-width;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
