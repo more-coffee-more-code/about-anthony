@@ -67,11 +67,10 @@ export default {
 }
 .section-skills {
   height: $section-height;
-  width: 100vw;
 
   &__content {
     max-width: 800px;
-    // margin: 0 auto;
+    margin: 0 auto;
   }
 
   &__header {
@@ -98,6 +97,11 @@ export default {
 
     &__skill {
       max-width: 5.5em;
+
+      & p {
+        font-weight: $skill-label-font-weight;
+        font-size: 1.2rem;
+      }
     }
   }
 
