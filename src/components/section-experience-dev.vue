@@ -31,7 +31,7 @@
   </section>
 </template>
 <script>
-import DevProject from '../components/project-dev.vue';
+import DevProject from '../components/project.vue';
 import ButtonOutlined from '../components/button-outlined.vue';
 
 export default {
