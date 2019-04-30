@@ -75,7 +75,9 @@ export default {
 
   &__header {
     font-size: $section-header-font-size;
-    margin-bottom: 12rem;
+    margin: 0 auto 12rem;
+    border-bottom: $section-header-border-width solid #9CCC65;
+    width: 250px;
   }
 
   &__skills-display {
