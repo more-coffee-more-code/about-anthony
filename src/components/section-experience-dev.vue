@@ -11,6 +11,7 @@
             class="section-experience-dev__experience-display__experience"
           />
           <button-outlined 
+            url="https://www.redbull.com/us-en/projects/ninja/"
             class="section-experience-dev__experience-display__button"
           />
         </div>
@@ -21,6 +22,7 @@
           class="section-experience-dev__experience-display__experience"
         />
         <button-outlined
+          url="https://smallthanks.withgoogle.com/"
           class="section-experience-dev__experience-display__button"
         />
         </div>

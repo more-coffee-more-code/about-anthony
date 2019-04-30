@@ -1,11 +1,6 @@
 <template>
-  <!-- <a href="url">
-    <button class="button-outlined">
-      Go to project >
-    </button>
-  </a> -->
-  <a href="http://google.com" target="_blank">
-    <button class="button-outlined">My Button</button>
+  <a :href=this.url target="_blank">
+    <button class="button-outlined">Go to project ></button>
   </a>
 </template>
 <script>
