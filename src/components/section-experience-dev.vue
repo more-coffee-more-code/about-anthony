@@ -71,16 +71,6 @@ export default {
     &__experience {
       margin: 0 auto;
     }
-    &__button {
-      border: 2px solid $color-material-white;
-      background-color: black;
-      color: $color-material-white;
-      padding: 14px 28px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-      margin: 2.5rem auto 0;
-    }
   }
 }
 </style>
