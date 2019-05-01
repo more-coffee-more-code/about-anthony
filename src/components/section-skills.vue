@@ -63,6 +63,7 @@ export default {
   width: auto;
 }
 .section-skills {
+  display: flex;
   height: auto;
   
   @include for-desktop {
@@ -71,15 +72,21 @@ export default {
 
   &__content {
     max-width: $section-content-max-width;
+    width: 100%;
     margin: 0 auto;
     height: auto;
+    align-self: center;
   }
 
   &__header {
-    font-size: $section-header-font-size;
+    font-size: $section-header-font-size-mobile;
     margin: 0 auto 12rem;
     border-bottom: $section-header-border-width solid #9CCC65;
-    width: 250px;
+    display: inline-block;
+
+    @include for-desktop {
+      font-size: $section-header-font-size-desktop;
+    }
   }
 
   &__skills-display {

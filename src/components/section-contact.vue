@@ -24,7 +24,7 @@ export default {
 @import '../assets/global-styles.scss';
 
 .section-contact {
-  // height: $section-height;
+  height: $section-height;
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -34,10 +34,14 @@ export default {
   }
 
   &__header {
-    font-size: $section-header-font-size;
+    font-size: $section-header-font-size-mobile;
     border-bottom: $color-light-green solid 4px;
-    max-width: 550px; 
     margin: 0 auto;
+    display: inline-block;
+
+    @include for-desktop {
+      font-size: $section-header-font-size-desktop;
+    }
   }
 
   &__contact-info {

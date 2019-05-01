@@ -60,7 +60,8 @@ export default {
 
 .section-experience-dev {
   display: flex;
-  height: 100vh;
+  height: auto;
+  min-height: $section-min-height;
 
   @include for-desktop {
     height: $section-height;
@@ -69,16 +70,18 @@ export default {
   &__content {
     height: auto;
     margin: 0 auto;
+    align-self: center;
   }
 
   &__header {
-    width: $section-header-width;
-    margin: 0 auto;
+    display: inline-block;
+    margin: 0 auto 4rem;
     border-bottom: $section-header-border-width solid #9CCC65;
     justify-content: center;
+    font-size: $section-header-font-size-mobile;
 
     @include for-desktop {
-      font-size: $section-header-font-size;
+      font-size: $section-header-font-size-desktop;
     }
   }
 
@@ -91,7 +94,7 @@ export default {
 
     &__wrapper {
       max-width: 500px;
-      max-height: 300px;
+      min-height: 300px;
       height: 100%;
     }
 

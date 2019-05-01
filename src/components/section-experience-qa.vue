@@ -61,8 +61,9 @@ export default {
 
 .section-experience-qa {
   height: auto;
-  padding-bottom: 4rem; 
-
+  display: flex;
+  min-height: $section-min-height;
+  
   @include for-desktop {
     height: $section-height;
   }
@@ -71,10 +72,18 @@ export default {
     max-width: $section-content-max-width;
     margin: 0 auto;
     height: auto;
+    align-self: center;
   }
 
   &__header {
-    font-size: $section-header-font-size;
+    margin: 0 auto 4rem;
+    font-size: $section-header-font-size-mobile;
+    border-bottom: $section-header-border-width solid #9CCC65;
+    display: inline-block;
+
+    @include for-desktop {
+      font-size: $section-header-font-size-desktop;
+    }
   }
 
   &__experience-display {

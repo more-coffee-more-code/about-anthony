@@ -19,7 +19,7 @@
           :openNewTab="false"
         />
         <nav-button class="section-landing__nav__item" 
-          buttonCopy="Connect :)"
+          buttonCopy="Let's talk :)"
           url="#contact"
           :openNewTab="false"
         />
@@ -62,8 +62,12 @@ export default {
   &__header {
     margin: 0 auto;
     // max-width: $section-landing-content-width;  
-    font-size: $section-header-font-size;
+    font-size: $section-landing-header-font-size-mobile;
     color: $color-light-green;
+
+    @include for-desktop {
+      font-size: $section-header-font-size-desktop;
+    }
   }
 
   &__nav {
@@ -73,6 +77,7 @@ export default {
     
     @include for-desktop {
       justify-content: space-evenly;
+      flex-direction: row;
     }
     
     &__item {
