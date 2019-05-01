@@ -7,10 +7,29 @@ $skill-label-font-weight: 400;
 
 $section-landing-content-width: 60%;
 
-$section-content-width: 90%;
+$section-content-max-width: 1440px;
 
 
-$section-content-padding-top: 5rem;
+$section-content-padding-top: 6rem;
 
 $color-material-white: #fafafa;
 $color-light-green: #9CCC65;
+
+// responsive mixins
+@mixin for-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: 601px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: 901px) {
+    @content;
+  }
+}

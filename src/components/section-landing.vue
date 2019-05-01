@@ -1,41 +1,48 @@
 <template>
   <section class="section-landing">
     <div class="section-landing__content">
-      <h1 class="section-landing__header">{{ this.header }}</h1>
-      <nav class="section-landing__nav">
-        <a class="section-landing__nav__item" href="">Skills</a>
-        <a class="section-landing__nav__item" href="">Developer</a>
-        <a class="section-landing__nav__item" href="">Qa</a>
-        <a class="section-landing__nav__item" href="">Contact</a>
-      </nav>
+      <h1 class="section-landing__header">Anthony Ruffin</h1>
+      <div class="section-landing__nav">
+        <nav-button class="section-landing__nav__item" 
+          buttonCopy="Skills"
+          url="#skills"
+          :openNewTab="false"
+        />
+        <nav-button class="section-landing__nav__item" 
+          buttonCopy="Developer"
+          url="#developer"
+          :openNewTab="false"
+        />
+        <nav-button class="section-landing__nav__item" 
+          buttonCopy="QA"
+          url="#qa"
+          :openNewTab="false"
+        />
+        <nav-button class="section-landing__nav__item" 
+          buttonCopy="Connect :)"
+          url="#contact"
+          :openNewTab="false"
+        />
+      </div>
     </div>
   </section>
 </template>
 <script>
+import NavButton from '../components/button-outlined.vue';
+
 export default {
   name: 'section-landing',
+  components: {
+    NavButton
+  },
   data() {
     return {
       windowWidth: 0,
       windowHeight: 0
     }
   },
-  created() {
-    window.addEventListener('resize', this.handleResize);
-    this.handleResize();
-  },
   methods: {
-    header() {
-      this.handleResize();
-      let lineBreak = (this.windowWidth > 900) ? 'Anthony Ruffin' : 'Anthony Ruffin'; 
-      console.log(lineBreak);
-      // return lineBreak; 
-      return 'asdfasdf';
-    },
-    handleResize() {
-      // console.log('resized');
-      return this.windowWidth = window.innerWidth;
-    }
+
   }
 }
 </script>
@@ -44,22 +51,29 @@ export default {
 
 .section-landing {
   height: $section-height;
+  display: flex;
 
   &__content {
-    max-width: $section-landing-content-width;
-    justify-content: center;
-    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
     margin: 0 auto;
   }
 
   &__header {
+    margin: 0 auto;
+    // max-width: $section-landing-content-width;  
     font-size: $section-header-font-size;
-    border-bottom: #9CCC65 solid 4px;
+    color: $color-light-green;
   }
 
   &__nav {
     display: flex;
-    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-direction: column;
+    
+    @include for-desktop {
+      justify-content: space-evenly;
+    }
     
     &__item {
       color: #fafafa;

@@ -1,10 +1,7 @@
 <template>
-  <section class="section-skills">
+  <section class="section-skills" id="skills">
     <div class="section-skills__content">
       <h1 class="section-skills__header">Skills</h1>
-      <!-- <div v-for="skill in skills" :key="skill.id" class="section-skills__skills-display">
-        <span class="section-skills__skills-display__skill">{{ skill.skillIcon}}</span>
-      </div> -->
       <div class="section-skills__skills-display section-skills__skills-display__flex-grid-thirds">
         <!-- CSS3 -->
         <div class="section-skills__skills-display__skill">
@@ -66,11 +63,16 @@ export default {
   width: auto;
 }
 .section-skills {
-  height: $section-height;
+  height: auto;
+  
+  @include for-desktop {
+    height: $section-height;
+  }
 
   &__content {
-    max-width: $section-content-width;
+    max-width: $section-content-max-width;
     margin: 0 auto;
+    height: auto;
   }
 
   &__header {
