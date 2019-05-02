@@ -1,11 +1,27 @@
 <template>
   <div id="app">
-    <router-view/>
+    <loader v-if="isLoading" class="loader"/>
+    <router-view v-if="!isLoading"/>
   </div>
 </template>
 <script>
+import Loader from '.././src/components/loader.vue';
+
 export default {
-  
+  name: 'app',
+  components: {
+    Loader
+  },
+  data() {
+    return {
+      isLoading: true
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2000);
+  }
 }
 </script>
 <style lang="scss">
@@ -26,4 +42,10 @@ export default {
     }
   }
 }
+
+.loader {
+  background-color: black;
+  overflow-y:hidden;
+}
+
 </style>
