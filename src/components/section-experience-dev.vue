@@ -1,7 +1,7 @@
 <template>
   <section class="section-experience-dev" id="developer">
     <div class="section-experience-dev__content">
-      <h1 class="section-experience-dev__header">Developer xp</h1>
+      <h1 class="section-experience-dev__header">Developer</h1>
       <section class="section-experience-dev__experience-display">
         <div class="section-experience-dev__experience-display__wrapper">
           <dev-project

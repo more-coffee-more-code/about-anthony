@@ -1,7 +1,7 @@
 <template>
   <section class="section-experience-qa" id="qa">
     <div class="section-experience-qa__content">
-      <h1 class="section-experience-qa__header">Qa xp</h1>
+      <h1 class="section-experience-qa__header">Qa</h1>
       <div class="section-experience-qa__experience-display">
         <div class="section-experience-qa__experience-display__wrapper">
           <qa-project
@@ -11,6 +11,7 @@
           />
           <button-outlined
             class="section-experience-qa__experience-display__button"
+            url="https://shopping.thinkwithgoogle.com/"
             buttonCopy="Go to project >"
             :openNewTab="true"
           />
@@ -25,6 +26,7 @@
           <button-outlined
             class="section-experience-qa__experience-display__button"
             buttonCopy="Go to project >"
+            url="https://www.assemblynfk.com/"
             :openNewTab="true"
           />
         </div>
@@ -37,6 +39,7 @@
           <button-outlined
             class="section-experience-qa__experience-display__button"
             buttonCopy="Go to project >"
+            url="https://www.thinkwithgoogle.com/feature/mobile-gaming-genres/"
             :openNewTab="true"
           />
         </div>
