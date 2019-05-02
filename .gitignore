@@ -24,3 +24,5 @@ firebase.json
 .firebase/hosting.ZGlzdA.cache
 .firebase/hosting.aW5kZXguaHRtbA.cache
 .firebase/hosting.cHVibGlj.cache
+firebase-debug.log
+.gitignore

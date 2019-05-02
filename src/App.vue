@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <loader v-if="isLoading" class="loader"/>
-    <router-view v-if="!isLoading"/>
+    <loader v-if="isLoading" class="app__loader"/>
+    <router-view class="app__home" v-if="!isLoading"/>
   </div>
 </template>
 <script>
@@ -20,7 +20,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 2000);
+    }, 200);
   }
 }
 </script>
@@ -43,9 +43,21 @@ export default {
   }
 }
 
-.loader {
-  background-color: black;
-  overflow-y:hidden;
-}
+.app {
+  &__loader {
+    background-color: black;
+    overflow-y:hidden;
+    transition: .5s ease-in;
+  }
 
+  &__home {
+    animation-name: fade-in;
+    animation-duration: 0.8s;
+
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1}
+    }
+  }
+}
 </style>

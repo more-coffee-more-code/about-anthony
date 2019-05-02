@@ -1,6 +1,5 @@
 <template>
   <div id="loader">
-    ....loading  
   </div>
 </template>
 <script>
