@@ -1,7 +1,7 @@
 <template>
   <section class="section-experience-qa" id="qa">
     <div class="section-experience-qa__content">
-      <h1 class="section-experience-qa__header">Qa</h1>
+      <h1 class="section-experience-qa__header">QA</h1>
       <div class="section-experience-qa__experience-display">
         <div class="section-experience-qa__experience-display__wrapper">
           <qa-project
