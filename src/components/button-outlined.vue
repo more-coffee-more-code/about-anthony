@@ -28,5 +28,9 @@ export default {
 
 .button-outlined:hover {
   cursor: pointer;
+  transition: 0.6s ease-in;
+  background-color: $color-light-green;
+  color: black;
+  opacity: .8;
 }
 </style>

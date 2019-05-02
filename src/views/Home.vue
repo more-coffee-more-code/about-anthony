@@ -1,4 +1,5 @@
 <template>
+<!-- todo: animate content with Intersection observer -->
   <div class="home">
     <section-landing/>
     <section-skills/>
