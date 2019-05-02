@@ -1,7 +1,7 @@
 <template>
   <section class="section-landing">
     <div class="section-landing__content">
-      <h1 class="section-landing__header">Anthony Ruffin</h1>
+      <h1 class="section-landing__header">{{ this.name }}</h1>
       <div class="section-landing__nav">
         <nav-button class="section-landing__nav__item" 
           buttonCopy="Skills"
@@ -38,7 +38,8 @@ export default {
   data() {
     return {
       windowWidth: 0,
-      windowHeight: 0
+      windowHeight: 0,
+      name: '<Anthony Ruffin />'
     }
   },
   methods: {
@@ -61,7 +62,6 @@ export default {
 
   &__header {
     margin: 0 auto;
-    // max-width: $section-landing-content-width;  
     font-size: $section-landing-header-font-size-mobile;
     color: $color-light-green;
 
