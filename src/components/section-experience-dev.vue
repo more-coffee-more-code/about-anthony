@@ -65,6 +65,7 @@ export default {
 
   @include for-desktop {
     height: $section-height;
+    min-height: 100vh;
   } 
 
   &__content {
