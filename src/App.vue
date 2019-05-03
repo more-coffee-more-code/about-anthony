@@ -28,6 +28,8 @@ export default {
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fafafa;
