@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <loader v-if="isLoading" class="app__loader"/>
-    <router-view class="app__home" v-if="!isLoading"/>
+    <!-- <loader v-if="isLoading" class="app__loader"/> -->
+    <router-view class="app__home"/>
   </div>
 </template>
 <script>
-import Loader from '.././src/components/loader.vue';
+// import Loader from '.././src/components/loader.vue';
 
 export default {
   name: 'app',
   components: {
-    Loader
+    // Loader
   },
   data() {
     return {
@@ -44,11 +44,11 @@ export default {
 }
 
 .app {
-  &__loader {
-    background-color: black;
-    overflow-y:hidden;
-    transition: .5s ease-in;
-  }
+  // &__loader {
+  //   background-color: black;
+  //   overflow-y:hidden;
+  //   transition: .5s ease-in;
+  // }
 
   &__home {
     animation-name: fade-in;
