@@ -11,6 +11,10 @@
           <p class="section-contact__contact-info__label">Phone #:</p>
           <p class="section-contact__contact-info__detail">757-450-3114</p>
         </div>
+        <div class="section-contact__contact-info__github">
+          <p class="section-contact__contact-info__label">Github:</p>
+          <p class="section-contact__contact-info__detail">https://github.com/anthonyFeDev</p>
+        </div>
       </div>
     </div>
   </section>

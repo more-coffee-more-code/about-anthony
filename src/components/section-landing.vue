@@ -2,7 +2,7 @@
   <section class="section-landing">
     <div class="section-landing__content">
       <h1 class="section-landing__header">{{ this.name }}</h1>
-      <div class="section-landing__nav">
+      <div class="section-landing__nav section-landing__nav--flex-edge">
         <nav-button class="section-landing__nav__item" 
           buttonCopy="Skills"
           url="#skills"
@@ -78,8 +78,14 @@ export default {
     @include for-desktop {
       justify-content: space-evenly;
       flex-direction: row;
+      
+      @supports (-ms-accelerator: true) {
+        &--flex-edge {
+          justify-content: space-around;
+        }
+      } 
     }
-    
+
     &__item {
       color: #fafafa;
     }
