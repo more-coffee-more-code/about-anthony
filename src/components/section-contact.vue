@@ -62,6 +62,10 @@ export default {
       padding-top: 3rem;
       margin: 4rem auto;
     }
+
+    &__phone {
+      margin-bottom: 4rem;
+    }
   }
 }
 </style>
