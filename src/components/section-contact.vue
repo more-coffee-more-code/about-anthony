@@ -13,7 +13,7 @@
         </div>
         <div class="section-contact__contact-info__github">
           <p class="section-contact__contact-info__label">Github:</p>
-          <p class="section-contact__contact-info__detail">https://github.com/anthonyFeDev</p>
+          <a class="section-contact__contact-info__detail__link" :href=this.githubLink target="_blank">{{ this.githubLink }}</a>
         </div>
       </div>
     </div>
@@ -21,7 +21,12 @@
 </template>
 <script>
 export default {
-  name: 'section-contact'
+  name: 'section-contact',
+  data(){
+    return {
+      githubLink: 'https://github.com/anthonyFeDev'
+    }
+  }
 }
 </script>
 <style lang="scss">
@@ -50,12 +55,29 @@ export default {
 
   &__contact-info {
     &__label {
-      font-size: 1.2rem;
+      font-size: $section-contact-label-font-size-mobile;
+
+      @include for-desktop {
+        font-size: $section-contact-label-font-size-desktop;
+      }
     }
 
     &__detail {
-      font-size: 1.8rem;
+      font-size: $section-contact-detail-font-size-mobile;
       color: $color-light-green;
+
+       @include for-desktop {
+         font-size: $section-contact-detail-font-size-desktop;
+       }
+      &__link {
+        font-size: $section-contact-detail-font-size-mobile;
+        color: $color-light-green;
+        width: 100px;
+
+        @include for-desktop {
+          font-size: $section-contact-detail-font-size-desktop;
+        }
+      }
     }
 
     &__email {
@@ -65,6 +87,10 @@ export default {
 
     &__phone {
       margin-bottom: 4rem;
+    }
+
+    &__button {
+      cursor: pointer;
     }
   }
 }
