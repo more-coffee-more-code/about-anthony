@@ -97,6 +97,7 @@ export default {
       max-width: 500px;
       min-height: 300px;
       height: 100%;
+      margin: 0 auto;
     }
 
     &__experience {
