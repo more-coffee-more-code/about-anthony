@@ -43,6 +43,46 @@
             :openNewTab="true"
           />
         </div>
+        <div class="section-experience-qa_-experience-display__wrapper">
+          <qa-project
+            class="section-experience-qa__experience-display__experience"
+            title="Small thanks with Google"
+            description="Celebrate your favorite customer reviews in posters, postcards and more."
+          />
+          <button-outlined
+            class="section-experience-qa__experience-display__button"
+            buttonCopy="Go to project >"
+            url="https://smallthanks.withgoogle.com/"
+            :openNewTab="true" 
+          />
+        </div>
+        <div class="section-experience-qa_-experience-display__wrapper">
+          <qa-project
+            class="section-experience-qa__experience-display__experience"
+            title="Adidas Boston Marathon 2018"
+            description="30,000 Runners. 30,000 Films. Get your personalized Boston Marathon® film after the race."
+          />
+          <button-outlined
+            class="section-experience-qa__experience-display__button"
+            buttonCopy="Go to project >"
+            url="https://smallthanks.withgoogle.com/"
+            :openNewTab="true" 
+          />
+        </div>
+        <!-- <div class="section-experience-qa_-experience-display__wrapper">
+          <qa-project
+            class="section-experience-qa__experience-display__experience"
+            title="Adidas Boston Marathon 2019"
+            description="30,000 Runners. 30,000 Films. Get your personalized Boston Marathon® film after the race."
+          />
+          <button-outlined
+            class="section-experience-qa__experience-display__button"
+            buttonCopy="Go to project >"
+            url="https://smallthanks.withgoogle.com/"
+            :openNewTab="true" 
+          />
+        </div> -->
+        
       </div>
     </div>
   </section>

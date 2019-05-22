@@ -1,6 +1,6 @@
 <template>
   <a :href=this.url :target=" (this.openNewTab) ? '_blank': '_self'">
-    <button class="button-outlined">{{ this.buttonCopy}}</button>
+    <button class="button-outlined">{{ this.buttonCopy }}</button>
   </a>
 </template>
 <script>
