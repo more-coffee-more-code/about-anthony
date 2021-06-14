@@ -3,8 +3,6 @@
   <div class="home">
     <section-landing/>
     <section-skills/>
-    <section-experience-dev/>
-    <section-experience-qa/>
     <section-contact/>
   </div>
 </template>

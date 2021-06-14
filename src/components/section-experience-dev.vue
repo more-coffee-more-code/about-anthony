@@ -4,32 +4,7 @@
       <h1 class="section-experience-dev__header">Developer</h1>
       <section class="section-experience-dev__experience-display">
         <div class="section-experience-dev__experience-display__wrapper">
-          <dev-project
-            :title="this.playNinja"
-            description="Enter for your chance to game with Ninja or win Ninja branded prizes"
-            roles="[role1, role2]"
-            class="section-experience-dev__experience-display__experience"
-          />
-          <button-outlined 
-            url="https://www.redbull.com/us-en/projects/ninja/"
-            class="section-experience-dev__experience-display__button"
-            buttonCopy="Go to project >"
-            :openNewTab="true"
-          />
-        </div>
-        <div class="section-experience-dev__experience-display__wrapper">
-          <!-- todo: set line break for project title -->
-        <dev-project
-          :title="this.smallThanks"
-          description="Web app where business users can print and download promotional materials"
-          class="section-experience-dev__experience-display__experience"
-        />
-        <button-outlined
-          url="https://smallthanks.withgoogle.com/"
-          class="section-experience-dev__experience-display__button"
-          buttonCopy="Go to project >"
-          :openNewTab="true"
-        />
+        
         </div>
       </section>
     </div>
@@ -47,8 +22,7 @@ export default {
   },
   data() {
     return {
-      smallThanks: `Small thanks\nwith Google`,
-      playNinja: `Play with\nNinja`
+      
     }
   }
 }

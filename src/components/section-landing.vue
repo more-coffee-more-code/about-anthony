@@ -3,28 +3,6 @@
     <div class="section-landing__content">
       <h1 class="section-landing__header">{{ this.name }}</h1>
       <h3 class="section-landing__subheadline">{{ this.subheadline }}</h3>
-      <div class="section-landing__nav section-landing__nav--flex-edge">
-        <nav-button class="section-landing__nav__item" 
-          buttonCopy="Skills"
-          url="#skills"
-          :openNewTab="false"
-        />
-        <nav-button class="section-landing__nav__item" 
-          buttonCopy="Developer"
-          url="#developer"
-          :openNewTab="false"
-        />
-        <nav-button class="section-landing__nav__item" 
-          buttonCopy="QA"
-          url="#qa"
-          :openNewTab="false"
-        />
-        <nav-button class="section-landing__nav__item" 
-          buttonCopy="Let's talk :)"
-          url="#contact"
-          :openNewTab="false"
-        />
-      </div>
     </div>
   </section>
 </template>
