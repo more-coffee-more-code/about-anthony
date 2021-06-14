@@ -2,6 +2,7 @@
   <section class="section-landing">
     <div class="section-landing__content">
       <h1 class="section-landing__header">{{ this.name }}</h1>
+      <h3 class="section-landing__header">{{ this.subheadline }}</h3>
       <div class="section-landing__nav section-landing__nav--flex-edge">
         <nav-button class="section-landing__nav__item" 
           buttonCopy="Skills"
@@ -39,7 +40,8 @@ export default {
     return {
       windowWidth: 0,
       windowHeight: 0,
-      name: '<Anthony Ruffin />'
+      name: '<Anthony Ruffin />',
+      subheadline: 'Designer. Developer. QA'
     }
   },
   methods: {
