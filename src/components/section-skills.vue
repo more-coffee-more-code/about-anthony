@@ -46,6 +46,20 @@
             </svg>
             <p>Vue.js</p>
           </div>
+          <!-- WordPress -->
+          <!-- <div class="section-skills__skills-display__skill">
+            <svg class="section-skills__skills-display__flex-grid-thirds__column" viewBox="0 0 128 128">
+              <path fill="#9CCC65" d="m-1.85e-7 8.9337 49.854 0.1586 14.299 24.415 14.3-24.415 49.547-0.1577-63.834 110.14zm126.98 0.6374-24.36 0.0207-38.476 66.052-38.453-66.052-24.749-0.0194 63.211 107.89zm-25.14-0.008-22.749 0.1676-14.938 25.033-14.938-25.033-22.794-0.1679l37.731 64.476z"></path>
+            </svg>
+            <p>WordPress</p>
+          </div> -->
+          <!-- C# -->
+          <!-- <div class="section-skills__skills-display__skill">
+            <svg class="section-skills__skills-display__flex-grid-thirds__column" viewBox="0 0 128 128">
+              <path fill="#9CCC65" d="m-1.85e-7 8.9337 49.854 0.1586 14.299 24.415 14.3-24.415 49.547-0.1577-63.834 110.14zm126.98 0.6374-24.36 0.0207-38.476 66.052-38.453-66.052-24.749-0.0194 63.211 107.89zm-25.14-0.008-22.749 0.1676-14.938 25.033-14.938-25.033-22.794-0.1679l37.731 64.476z"></path>
+            </svg>
+            <p>C#</p>
+          </div> -->
         </div>
       </div>
     </div>
