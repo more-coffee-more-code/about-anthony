@@ -1,16 +1,14 @@
 <template>
   <div id="app">
-    <loader v-if="isLoading" class="app__loader"/>
     <router-view class="app__home" v-if="!isLoading"/>
   </div>
 </template>
 <script>
-import Loader from '.././src/components/loader.vue';
 
 export default {
   name: 'app',
   components: {
-    Loader
+    
   },
   data() {
     return {
