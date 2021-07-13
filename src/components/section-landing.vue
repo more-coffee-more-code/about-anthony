@@ -52,7 +52,7 @@ export default {
 
   &__subheadline {
     font-size: 14px;
-    color: $color-light-green;
+    color: #fafafa;
 
     @include for-desktop {
       font-size: 2rem;
