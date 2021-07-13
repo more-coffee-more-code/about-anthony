@@ -24,7 +24,7 @@ export default {
   name: 'section-contact',
   data(){
     return {
-      githubLink: 'https://github.com/anthonyFeDev'
+      githubLink: 'https://github.com/more-coffee-more-code'
     }
   }
 }
