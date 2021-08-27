@@ -10,8 +10,6 @@
 <script>
 // @ is an alias to /src
 import SectionContact from '../components/section-contact'
-import SectionExperienceDev from '../components/section-experience-dev'
-import SectionExperienceQa from '../components/section-experience-qa'
 import SectionLanding from '../components/section-landing'
 import SectionSkills from '../components/section-skills'
 
@@ -20,8 +18,6 @@ export default {
   components: {
     SectionLanding,
     SectionSkills,
-    SectionExperienceDev,
-    SectionExperienceQa,
     SectionContact
   }
 }
