@@ -33,7 +33,7 @@ export default {
 @import '../assets/global-styles.scss';
 
 .section-contact {
-  height: $section-height;
+  min-height: $section-height;
   display: flex;
   justify-content: center;
   vertical-align: middle;

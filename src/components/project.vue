@@ -2,39 +2,80 @@
   <div class="project-dev">
     <h1 class="project-dev__project-title">{{ title }}</h1>
     <p class="project-dev__project-details">{{ description }}</p>
-    <!-- <p v-for="role in roles" :key="role" class="project-dev__project-roles"> -->
-      <!-- <span class="project-dev__project-roles__role">{{ role }}</span> -->
-    <!-- </p> -->
+    <a :href="link" class="project-dev__project-link">Go to project &rarr;</a>
+    <p class="project-dev__label">Built with &hearts; using:</p>
+    <ul class="project-dev__tech-list">
+      <li v-for="item in this.vueList" :key="item">{{ item }}</li>
+    </ul>
   </div>
 </template>
 <script>
 export default {
   name: 'project-dev',
-  props: [
-    "title",
-    "description",
-    // "roles"
-  ]
+  props: {
+    title: String,
+    description: String,
+    link: String,
+    
+  },
+  data() {
+    return {
+      vueList: [
+        "HTML",
+        "CSS",
+        "JS",
+        "SASS",
+        "Vue.js"
+      ]
+    }
+  }
 }
 </script>
 <style lang="scss">
 @import '../assets/global-styles.scss';
 
 .project-dev {
+  border: solid 1px $color-light-green;
+  max-width: 250px;
+  text-align: left;
+  padding: 20px;
+  margin: 10px;
 
   &__project {
 
     &-title {
       font-size: 2.4rem;  
-      color: $color-light-green;
+      color: $color-light-green;    
     }
     
     &-details {
-      font-size: 1.2rem;
-      margin: 0 auto;
-      width: 60%;
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
+
+    &-link {
+      color: $color-light-green;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__tech-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    & li {
+      margin-right: 10px;
+    }
+  }
+
+  &__label {
+    margin: 50px 0 0;
   }
 }
 </style>

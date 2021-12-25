@@ -31,7 +31,7 @@ export default {
 @import '../assets/global-styles.scss';
 
 .section-landing {
-  height: $section-height;
+  min-height: $section-height;
   display: flex;
 
   &__content {

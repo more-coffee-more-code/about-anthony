@@ -81,7 +81,7 @@ export default {
   height: auto;
   
   @include for-desktop {
-    height: $section-height;
+    min-height: $section-height;
   }
 
   &__content {
