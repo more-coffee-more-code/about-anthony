@@ -13,7 +13,7 @@
         </div>
         <div class="section-contact__contact-info__github">
           <p class="section-contact__contact-info__label">Github:</p>
-          <a class="section-contact__contact-info__detail__link" :href=this.githubLink target="_blank">{{ this.githubLink }}</a>
+          <a class="section-contact__contact-info__detail__link" :href=this.githubLink target="_blank">More Coffee, More Code</a>
         </div>
       </div>
     </div>
