@@ -5,16 +5,13 @@
   </div>
 </template>
 <script>
-import Project from '../components/project.vue'
-
 export default {
-  name: 'Projects',
-  components: {
-    Project
-  }
+  name: 'Projects'
 }
 </script>
 <style lang="scss" scoped>
+@import '../assets/global-styles.scss';
+
 .projects {
   display: flex;
   flex-direction: row;

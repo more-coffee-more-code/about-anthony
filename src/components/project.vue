@@ -3,10 +3,12 @@
     <h1 class="project-dev__project-title">{{ title }}</h1>
     <p class="project-dev__project-details">{{ description }}</p>
     <a :href="link" class="project-dev__project-link">Go to project &rarr;</a>
+    <div class="project-dev__tech">
     <p class="project-dev__label">Built with &hearts; using:</p>
-    <ul class="project-dev__tech-list">
-      <li v-for="item in this.vueList" :key="item">{{ item }}</li>
-    </ul>
+      <ul class="project-dev__tech-list">
+        <li v-for="item in this.vueList" :key="item">{{ item }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -36,7 +38,8 @@ export default {
 
 .project-dev {
   border: solid 1px $color-light-green;
-  max-width: 250px;
+  max-width: 300px;
+  height: fit-content;
   text-align: left;
   padding: 20px;
   margin: 10px;
@@ -44,7 +47,7 @@ export default {
   &__project {
 
     &-title {
-      font-size: 2.4rem;  
+      font-size: 1.4rem;  
       color: $color-light-green;    
     }
     
@@ -66,6 +69,7 @@ export default {
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-self: flex-end;
     padding-left: 0;
     margin-bottom: 0;
 

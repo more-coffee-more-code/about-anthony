@@ -7,13 +7,8 @@
   </section>
 </template>
 <script>
-import NavButton from '../components/button-outlined.vue';
-
 export default {
   name: 'section-landing',
-  components: {
-    NavButton
-  },
   data() {
     return {
       windowWidth: 0,
@@ -21,9 +16,6 @@ export default {
       name: '<Anthony Ruffin />',
       subheadline: 'Designer. Developer. QA'
     }
-  },
-  methods: {
-
   }
 }
 </script>
