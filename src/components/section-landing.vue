@@ -8,19 +8,19 @@
 </template>
 <script>
 export default {
-  name: 'section-landing',
+  name: "section-landing",
   data() {
     return {
       windowWidth: 0,
       windowHeight: 0,
-      name: '<Anthony Ruffin />',
-      subheadline: 'Designer. Developer. QA'
-    }
-  }
-}
+      name: "<Anthony Ruffin />",
+      subheadline: "Designer. Developer. QA",
+    };
+  },
+};
 </script>
 <style lang="scss">
-@import '../assets/global-styles.scss';
+@import "../assets/global-styles.scss";
 
 .section-landing {
   min-height: $section-height;
@@ -55,16 +55,16 @@ export default {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    
+
     @include for-desktop {
       justify-content: space-evenly;
       flex-direction: row;
-      
+
       @supports (-ms-accelerator: true) {
         &--flex-edge {
           justify-content: space-around;
         }
-      } 
+      }
     }
 
     &__item {

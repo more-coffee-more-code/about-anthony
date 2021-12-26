@@ -2,10 +2,12 @@
   <section class="section-contact" id="contact">
     <div class="section-contact__content">
       <h1 class="section-contact__header">Lets talk! :)</h1>
-      <div class="section-contact__contact-info"> 
+      <div class="section-contact__contact-info">
         <div class="section-contact__contact-info__email">
           <p class="section-contact__contact-info__label">Email:</p>
-          <p class="section-contact__contact-info__detail">aruffincs@gmail.com</p>
+          <p class="section-contact__contact-info__detail">
+            aruffincs@gmail.com
+          </p>
         </div>
         <div class="section-contact__contact-info__phone">
           <p class="section-contact__contact-info__label">Phone #:</p>
@@ -13,7 +15,12 @@
         </div>
         <div class="section-contact__contact-info__github">
           <p class="section-contact__contact-info__label">Github:</p>
-          <a class="section-contact__contact-info__detail__link" :href=this.githubLink target="_blank">More Coffee, More Code</a>
+          <a
+            class="section-contact__contact-info__detail__link"
+            :href="this.githubLink"
+            target="_blank"
+            >More Coffee, More Code</a
+          >
         </div>
       </div>
     </div>
@@ -21,16 +28,16 @@
 </template>
 <script>
 export default {
-  name: 'section-contact',
-  data(){
+  name: "section-contact",
+  data() {
     return {
-      githubLink: 'https://github.com/more-coffee-more-code'
-    }
-  }
-}
+      githubLink: "https://github.com/more-coffee-more-code",
+    };
+  },
+};
 </script>
 <style lang="scss">
-@import '../assets/global-styles.scss';
+@import "../assets/global-styles.scss";
 
 .section-contact {
   min-height: $section-height;
@@ -66,9 +73,9 @@ export default {
       font-size: $section-contact-detail-font-size-mobile;
       color: $color-light-green;
 
-       @include for-desktop {
-         font-size: $section-contact-detail-font-size-desktop;
-       }
+      @include for-desktop {
+        font-size: $section-contact-detail-font-size-desktop;
+      }
       &__link {
         font-size: $section-contact-detail-font-size-mobile;
         color: $color-light-green;

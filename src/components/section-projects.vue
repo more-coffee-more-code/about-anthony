@@ -3,26 +3,42 @@
     <div class="section-projects__wrapper">
       <h1 class="section-projects__header">Projects</h1>
       <div class="section-projects__cards">
-        <project title="Drawing App" description="Create pixelated art by selecting a color and clicking on the canvas." link="https://more-coffee-more-code.github.io/pixel-drawing-app/"/>
-        <project title="Blue Ridge Mobile Autocare" description="Designed and developed a PWA for a mobile detailing and autocare company." link="https://blueridgemobileautocare.com/"/>
-        <project title="Ars Technica Search" description="App that queries Ars Technica's API and renders the search results." link="https://more-coffee-more-code.github.io/parsely-search/"/>
-        <project title="The Purple Cow" description="Users can see the number of total hits received by the Counter API." link="https://more-coffee-more-code.github.io/fearless-trial-project/"/>
+        <project
+          title="Drawing App"
+          description="Create pixelated art by selecting a color and clicking on the canvas."
+          link="https://more-coffee-more-code.github.io/pixel-drawing-app/"
+        />
+        <project
+          title="Blue Ridge Mobile Autocare"
+          description="Designed and developed a PWA for a mobile detailing and autocare company."
+          link="https://blueridgemobileautocare.com/"
+        />
+        <project
+          title="Ars Technica Search"
+          description="App that queries Ars Technica's API and renders the search results."
+          link="https://more-coffee-more-code.github.io/parsely-search/"
+        />
+        <project
+          title="The Purple Cow"
+          description="Users can see the number of total hits received by the Counter API."
+          link="https://more-coffee-more-code.github.io/fearless-trial-project/"
+        />
       </div>
     </div>
   </div>
 </template>
 <script>
-import Project from '../components/project.vue'
+import Project from "../components/project.vue";
 
 export default {
-  name: 'SectionProjects',
+  name: "SectionProjects",
   components: {
-    Project
-  }
-}
+    Project,
+  },
+};
 </script>
 <style lang="scss" scoped>
-@import '../assets/global-styles.scss';
+@import "../assets/global-styles.scss";
 
 .section-projects {
   min-height: $section-height;
@@ -41,7 +57,7 @@ export default {
   &__header {
     font-size: $section-header-font-size-mobile;
     margin: 0 auto 7rem;
-    border-bottom: $section-header-border-width solid #9CCC65;
+    border-bottom: $section-header-border-width solid #9ccc65;
     display: inline-block;
 
     @include for-desktop {

@@ -1,34 +1,18 @@
 <template>
   <div id="app">
-    <loader v-if="isLoading" class="app__loader"/>
-    <router-view class="app__home" v-if="!isLoading"/>
+    <router-view class="app__home" />
   </div>
 </template>
 <script>
-import Loader from '.././src/components/loader.vue';
-
 export default {
-  name: 'app',
-  components: {
-    Loader
-  },
-  data() {
-    return {
-      isLoading: true
-    }
-  },
-  mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 200);
-  }
-}
+  name: "app",
+};
 </script>
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -48,8 +32,8 @@ export default {
 .app {
   &__loader {
     background-color: black;
-    overflow-y:hidden;
-    transition: .5s ease-in;
+    overflow-y: hidden;
+    transition: 0.5s ease-in;
   }
 
   &__home {
@@ -57,8 +41,12 @@ export default {
     animation-duration: 0.8s;
 
     @keyframes fade-in {
-      from { opacity: 0; }
-      to { opacity: 1}
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   }
 }

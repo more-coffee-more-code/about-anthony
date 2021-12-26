@@ -2,9 +2,11 @@
   <div class="project-dev">
     <h1 class="project-dev__project-title">{{ title }}</h1>
     <p class="project-dev__project-details">{{ description }}</p>
-    <a :href="link" target="_blank" class="project-dev__project-link">Go to project &rarr;</a>
+    <a :href="link" target="_blank" class="project-dev__project-link"
+      >Go to project &rarr;</a
+    >
     <div class="project-dev__tech">
-    <p class="project-dev__label">Built with &hearts; using:</p>
+      <p class="project-dev__label">Built with &hearts; using:</p>
       <ul class="project-dev__tech-list">
         <li v-for="item in this.vueList" :key="item">{{ item }}</li>
       </ul>
@@ -13,28 +15,21 @@
 </template>
 <script>
 export default {
-  name: 'project-dev',
+  name: "project-dev",
   props: {
     title: String,
     description: String,
     link: String,
-    
   },
   data() {
     return {
-      vueList: [
-        "HTML",
-        "CSS",
-        "JS",
-        "SASS",
-        "Vue.js"
-      ]
-    }
-  }
-}
+      vueList: ["HTML", "CSS", "JS", "SASS", "Vue.js"],
+    };
+  },
+};
 </script>
 <style lang="scss">
-@import '../assets/global-styles.scss';
+@import "../assets/global-styles.scss";
 
 .project-dev {
   border: solid 1px $color-light-green;
@@ -45,12 +40,11 @@ export default {
   margin: 10px;
 
   &__project {
-
     &-title {
-      font-size: 1.4rem;  
-      color: $color-light-green;    
+      font-size: 1.4rem;
+      color: $color-light-green;
     }
-    
+
     &-details {
       font-size: 1rem;
     }
