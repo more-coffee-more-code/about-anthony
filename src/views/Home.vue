@@ -1,11 +1,11 @@
 <template>
 <!-- todo: animate content with Intersection observer -->
-  <div class="home">
+  <main class="home">
     <section-landing/>
     <section-skills/>
     <section-projects/>
     <section-contact/>
-  </div>
+  </main>
 </template>
 
 <script>
