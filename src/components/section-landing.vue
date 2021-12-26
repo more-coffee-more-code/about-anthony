@@ -14,7 +14,7 @@ export default {
       windowWidth: 0,
       windowHeight: 0,
       name: "<Anthony Ruffin />",
-      subheadline: "Designer. Developer. QA",
+      subheadline: "Designer. Developer. QA'er",
     };
   },
 };

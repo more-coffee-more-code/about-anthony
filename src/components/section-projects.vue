@@ -57,7 +57,7 @@ export default {
   &__header {
     font-size: $section-header-font-size-mobile;
     margin: 0 auto 7rem;
-    border-bottom: $section-header-border-width solid #9ccc65;
+    border-bottom: $section-header-border-width solid $color-light-green;
     display: inline-block;
 
     @include for-desktop {
