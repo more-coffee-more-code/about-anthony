@@ -26,7 +26,7 @@ export default {
 
 .section-projects {
   min-height: $section-height;
-  padding: 100px;
+  padding: 100px 0;
 
   &__cards {
     display: flex;

@@ -110,12 +110,16 @@ export default {
   }
 
   &__skills-display {
-    width: 700px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    @include for-desktop {
+      width: 700px;
+    }
 
     // &__flex-grid-thirds {
     //   display: flex;
