@@ -4,7 +4,7 @@
       <h1 class="section-projects__header">Projects</h1>
       <div class="section-projects__cards">
         <project title="Drawing App" description="Create pixelated art by selecting a color and clicking on the canvas." link="https://more-coffee-more-code.github.io/pixel-drawing-app/"/>
-        <project title="Blue Ridge Mobile Autocare" description="Designed and developed a PWA for a mobile detailing and autocare company."/>
+        <project title="Blue Ridge Mobile Autocare" description="Designed and developed a PWA for a mobile detailing and autocare company." link="https://blueridgemobileautocare.com/"/>
         <project title="Ars Technica Search" description="App that queries Ars Technica's API and renders the search results." link="https://more-coffee-more-code.github.io/parsely-search/"/>
         <project title="The Purple Cow" description="Users can see the number of total hits received by the Counter API." link="https://more-coffee-more-code.github.io/fearless-trial-project/"/>
       </div>

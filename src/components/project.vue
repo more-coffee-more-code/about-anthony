@@ -2,7 +2,7 @@
   <div class="project-dev">
     <h1 class="project-dev__project-title">{{ title }}</h1>
     <p class="project-dev__project-details">{{ description }}</p>
-    <a :href="link" class="project-dev__project-link">Go to project &rarr;</a>
+    <a :href="link" target="_blank" class="project-dev__project-link">Go to project &rarr;</a>
     <div class="project-dev__tech">
     <p class="project-dev__label">Built with &hearts; using:</p>
       <ul class="project-dev__tech-list">
