@@ -36,7 +36,6 @@
         <project
           title="Google Pixel"
           description="Performed Exploratory testing on the retail demo apps for the Pixel 3a and 4a."
-          link="https://www.thinkwithgoogle.com/feature/mobile-gaming-genres"
         />
         <project
           title="EVMS Virtual Tour"
