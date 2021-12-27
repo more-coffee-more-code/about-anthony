@@ -6,22 +6,52 @@
         <project
           title="Drawing App"
           description="Create pixelated art by selecting a color and clicking on the canvas."
-          link="https://more-coffee-more-code.github.io/pixel-drawing-app/"
+          link="https://more-coffee-more-code.github.io/pixel-drawing-app"
         />
         <project
           title="Blue Ridge Mobile Autocare"
           description="Designed and developed a PWA for a mobile detailing and autocare company."
-          link="https://blueridgemobileautocare.com/"
+          link="https://blueridgemobileautocare.com"
         />
         <project
           title="Ars Technica Search"
           description="App that queries Ars Technica's API and renders the search results."
-          link="https://more-coffee-more-code.github.io/parsely-search/"
+          link="https://more-coffee-more-code.github.io/parsely-search"
         />
         <project
           title="The Purple Cow"
           description="Users can see the number of total hits received by the Counter API."
-          link="https://more-coffee-more-code.github.io/fearless-trial-project/"
+          link="https://more-coffee-more-code.github.io/fearless-trial-project"
+        />
+        <project
+          title="Here to Create Legend"
+          description="Performed Black Box and Exploratory testing."
+          link="https://clios.com/sports/winner/direct/adidas-running/here-to-create-legend-58122"
+        />
+        <project
+          title="Think with Google"
+          description="Conducted User Acceptance and Exploratory testing."
+          link="https://www.thinkwithgoogle.com/feature/mobile-gaming-genres"
+        />
+        <project
+          title="Google Pixel"
+          description="Performed Exploratory testing on the retail demo apps for the Pixel 3a and 4a."
+          link="https://www.thinkwithgoogle.com/feature/mobile-gaming-genres"
+        />
+        <project
+          title="EVMS Virtual Tour"
+          description="Virutal tour website built using A-Frame along with 360 degree images and videos."
+          link="https://www.evms.edu/virtualtour"
+        />
+        <project
+          title="Lily Center"
+          description="Custom WordPress theme developed for Grace College."
+          link="https://lakes.grace.edu"
+        />
+        <project
+          title="Marketing Kit with Google"
+          description="Robust site that allows businesses to download and print promotional materials."
+          link="https://marketingkit.withgoogle.com"
         />
       </div>
     </div>

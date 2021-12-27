@@ -4,12 +4,12 @@
     <p class="project-dev__project-details">{{ description }}</p>
     <a :href="link" target="_blank" class="project-dev__project-link"
       >Go to project &rarr;</a>
-    <div class="project-dev__tech">
+    <!-- <div class="project-dev__tech">
       <p class="project-dev__label">Built with &hearts; using:</p>
       <ul class="project-dev__tech-list">
         <li v-for="item in this.vueList" :key="item">{{ item }}</li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -40,7 +40,7 @@ export default {
 
   &__project {
     &-title {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: $color-light-green;
     }
 
