@@ -24,7 +24,7 @@
           link="https://more-coffee-more-code.github.io/fearless-trial-project"
         />
         <project
-          title="Here to Create Legend"
+          title="Adidas Boston Marathon"
           description="Performed Black Box and Exploratory testing."
           link="https://clios.com/sports/winner/direct/adidas-running/here-to-create-legend-58122"
         />
